@@ -150,7 +150,7 @@ fun DogItem(
                 Spacer(modifier = Modifier.weight(1f))
                 DogItemButton(
                     expanded = expanded,
-                    onClick = { /*TODO*/ }
+                    onClick = { expanded = !expanded }
                 )
             }
             DogHobby(
@@ -197,7 +197,6 @@ fun DogHobby(
 
 @Composable
 private fun DogItemButton(
-
     expanded: Boolean,
     onClick: () -> Unit,
     modifier: Modifier = Modifier
